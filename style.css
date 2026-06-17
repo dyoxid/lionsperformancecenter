@@ -131,39 +131,98 @@ p {
     color: #be1e2d;
 }
 
-.card ul,
-.qualifications {
+.card ul {
     padding-left: 22px;
     margin-top: 18px;
 }
 
-.card li,
-.qualifications li {
+.card li {
     margin-bottom: 10px;
     font-size: 17px;
 }
 
 .coach {
     background: #0b0b0b;
+    text-align: center;
+}
+
+.coach-image {
+    margin-bottom: 40px;
+}
+
+.coach-image img {
+    width: 340px;
+    max-width: 90%;
+    border-radius: 16px;
+    border: 2px solid #be1e2d;
+    box-shadow: 0 0 25px rgba(190, 30, 45, 0.35);
+}
+
+.coach-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.coach-content h2 {
+    font-size: 44px;
+    margin-bottom: 12px;
 }
 
 .coach-subtitle {
     color: #be1e2d;
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.coach-content p {
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.qualifications-title {
+    color: #be1e2d;
+    margin-top: 45px;
+    margin-bottom: 24px;
+    text-align: center;
 }
 
 .qualifications {
-    margin-bottom: 32px;
+    list-style: none;
+    max-width: 760px;
+    margin: 0 auto 45px;
+    padding: 0;
+    text-align: left;
+}
+
+.qualifications li {
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.qualifications li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #be1e2d;
+    font-weight: bold;
 }
 
 .quote {
-    margin-top: 34px;
+    max-width: 850px;
+    margin: 45px auto 0;
     padding: 28px;
     border-left: 6px solid #be1e2d;
     background: #151515;
     font-size: 22px;
     font-style: italic;
+    text-align: center;
 }
 
 .contact {
@@ -227,6 +286,14 @@ footer p {
     .logo {
         width: 180px;
     }
+
+    .coach-content h2 {
+        font-size: 36px;
+    }
+
+    .coach-subtitle {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -254,5 +321,19 @@ footer p {
     .card,
     .contact-box {
         padding: 24px;
+    }
+
+    .coach-image img {
+        width: 280px;
+    }
+
+    .coach-content p,
+    .qualifications li {
+        font-size: 17px;
+    }
+
+    .quote {
+        font-size: 19px;
+        padding: 22px;
     }
 }
