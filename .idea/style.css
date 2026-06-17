@@ -11,8 +11,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.7;
-    color: #1f1f1f;
-    background: #f5f2ea;
+    color: #ffffff;
+    background: #050505;
 }
 
 .container {
@@ -39,6 +39,7 @@ h1 {
 
 h2 {
     font-size: 36px;
+    color: #ffffff;
 }
 
 h3 {
@@ -55,13 +56,22 @@ p {
     display: flex;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    #111;
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.9)),
+            radial-gradient(circle at center, #5c1118 0%, #120305 45%, #000000 100%);
     color: #fff;
 }
 
+.logo {
+    width: 220px;
+    max-width: 70%;
+    margin-bottom: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 35px rgba(190, 30, 45, 0.45);
+}
+
 .subtitle {
-    color: #d6a84f;
+    color: #be1e2d;
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
@@ -71,12 +81,13 @@ p {
     max-width: 760px;
     margin: 0 auto 34px;
     font-size: 22px;
+    color: #f2f2f2;
 }
 
 .button {
     display: inline-block;
-    background: #d6a84f;
-    color: #111;
+    background: #be1e2d;
+    color: #ffffff;
     padding: 15px 30px;
     border-radius: 8px;
     text-decoration: none;
@@ -85,21 +96,21 @@ p {
 }
 
 .button:hover {
-    background: #fff;
+    background: #ffffff;
+    color: #be1e2d;
     transform: translateY(-2px);
 }
 
 .about {
-    background: #fff;
+    background: #0b0b0b;
 }
 
 .about-alt {
-    background: #f5f2ea;
+    background: #151515;
 }
 
 .services {
-    background: #111;
-    color: #fff;
+    background: #050505;
 }
 
 .service-grid {
@@ -110,14 +121,14 @@ p {
 }
 
 .card {
-    background: #1d1d1d;
+    background: #151515;
     padding: 34px;
     border-radius: 14px;
-    border: 1px solid rgba(214, 168, 79, 0.25);
+    border: 1px solid rgba(190, 30, 45, 0.45);
 }
 
 .card h3 {
-    color: #d6a84f;
+    color: #be1e2d;
 }
 
 .card ul,
@@ -133,11 +144,11 @@ p {
 }
 
 .coach {
-    background: #fff;
+    background: #0b0b0b;
 }
 
 .coach-subtitle {
-    color: #d6a84f;
+    color: #be1e2d;
     font-weight: bold;
     font-size: 22px;
 }
@@ -149,42 +160,38 @@ p {
 .quote {
     margin-top: 34px;
     padding: 28px;
-    border-left: 6px solid #d6a84f;
-    background: #f5f2ea;
+    border-left: 6px solid #be1e2d;
+    background: #151515;
     font-size: 22px;
     font-style: italic;
 }
 
 .contact {
-    background: #111;
+    background: #000000;
     color: #fff;
     text-align: center;
-}
-
-.contact h2 {
-    color: #fff;
 }
 
 .contact-box {
     max-width: 520px;
     margin: 34px auto;
     padding: 30px;
-    border: 1px solid rgba(214, 168, 79, 0.35);
+    border: 1px solid rgba(190, 30, 45, 0.5);
     border-radius: 14px;
-    background: #1d1d1d;
+    background: #151515;
 }
 
 .contact-box h3 {
-    color: #d6a84f;
+    color: #be1e2d;
 }
 
 .contact a {
-    color: #d6a84f;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .contact a:hover {
-    color: #fff;
+    color: #be1e2d;
 }
 
 footer {
@@ -192,6 +199,7 @@ footer {
     color: #999;
     text-align: center;
     padding: 24px 0;
+    border-top: 1px solid rgba(190, 30, 45, 0.35);
 }
 
 footer p {
@@ -214,6 +222,10 @@ footer p {
 
     .hero-text {
         font-size: 20px;
+    }
+
+    .logo {
+        width: 180px;
     }
 }
 
