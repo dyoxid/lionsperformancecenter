@@ -206,12 +206,14 @@ p {
 }
 
 .qualifications li::before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
-    top: 0;
-    color: #be1e2d;
-    font-weight: bold;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
 }
 
 .quote {
